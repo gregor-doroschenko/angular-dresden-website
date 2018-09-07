@@ -3,5 +3,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  color: #fff;
+  display: grid;
   height: 70vh;
+  text-align: center;
+  vertical-align: middle;
+
+  .logo-title {
+    margin-top: 60px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
 }
