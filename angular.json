@@ -123,10 +123,5 @@
       }
     }
   },
-  "defaultProject": "angular-dresden-website",
-  "schematics": {
-    "@schematics/angular:component": {
-      "styleext": "scss"
-    }
-  }
+  "defaultProject": "angular-dresden-website"
 }
