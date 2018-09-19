@@ -1,4 +1,9 @@
-<div class="social-links">
+<div class="social-links"
+     [class.light]="light"
+     [class.dark]="!light"
+     [class.big-size]="big"
+     [class.medium-size]="!big"
+     [class.text-center]="center">
   <a href="https://www.meetup.com/de-DE/Angular-Meetup-Dresden/" target="_blank">
     <i class="fab fa-meetup"></i>
   </a>
