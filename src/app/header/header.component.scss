@@ -11,9 +11,21 @@
 
   .logo-title {
     margin-top: 60px;
-  }
 
-  h1 {
-    font-size: 3em;
+    h1 {
+      font-size: 3em;
+    }
+
+    .social-links {
+      a {
+        color: #fff;
+        font-size: 1.7em;
+        padding: 10px;
+
+        &:hover {
+          color: rgba(255,0,0,0.7);
+        }
+      }
+    }
   }
 }
