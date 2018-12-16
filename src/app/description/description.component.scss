@@ -1,5 +1,17 @@
 .description {
   text-align: center;
+  display: grid;
+  justify-items: center;
+  margin: 0 auto 2em auto;
+  width: 70%;
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
 }
 
 .promotion-block {
