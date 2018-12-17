@@ -1,3 +1,5 @@
+@import "src/assets/styles/_queries";
+
 .header {
   background-image: url("/assets/img/dresden-background.jpg");
   background-repeat: no-repeat;
@@ -5,27 +7,53 @@
   background-size: cover;
   color: #fff;
   display: grid;
-  height: 70vh;
   text-align: center;
-  vertical-align: middle;
+  align-items: center;
+  justify-items: center;
+  padding: 9em 0;
 
   .logo-title {
-    margin-top: 60px;
 
-    h1 {
-      font-size: 3em;
-    }
+    .title-links {
+      background-color: rgba(0,0,0,.5);
+      border-radius: 10px;
+      padding: 0 1.3em;
 
-    .social-links {
-      a {
-        color: #fff;
-        font-size: 1.7em;
-        padding: 10px;
+      @include mobile {
+        border-radius: 0;
+      }
 
-        &:hover {
-          color: rgba(255,0,0,0.7);
+      h1 {
+        font-size: 3em;
+
+        @include mobile {
+          font-size: 2.5em;
+        }
+      }
+
+      .social-links {
+        a {
+          color: #fff;
+          font-size: 1.7em;
+          padding: 10px;
+
+          &:hover {
+            color: rgba(255,0,0,0.7);
+          }
         }
       }
     }
+  }
+
+  @include mobile {
+    padding: 3em 0;
+  }
+
+  @include tablet {
+    padding: 7em 0;
+  }
+
+  @include laptop {
+    padding: 7em 0;
   }
 }
