@@ -5,10 +5,13 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { SocialMediaComponent } from './social-media/social-media.component';
-import { DescriptionComponent } from './description/description.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { SocialMediaComponent } from './components/social-media/social-media.component';
+import { DescriptionComponent } from './components/description/description.component';
+import { AppRoutingModule } from './app-routing.module';
+import { MainComponent } from './pages/main/main.component';
+import { ImprintComponent } from './pages/imprint/imprint.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +19,16 @@ import { DescriptionComponent } from './description/description.component';
     HeaderComponent,
     FooterComponent,
     SocialMediaComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    MainComponent,
+    ImprintComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
