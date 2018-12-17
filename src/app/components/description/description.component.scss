@@ -1,3 +1,5 @@
+@import "src/assets/styles/_queries";
+
 .description {
   text-align: center;
   display: grid;
@@ -7,10 +9,22 @@
 
   h2 {
     font-size: 2.5em;
+
+    @include mobile {
+      font-size: 1.7em;
+    }
   }
 
   p {
     font-size: 1.5em;
+
+    @include mobile {
+      font-size: 1.3em;
+    }
+  }
+
+  @include mobile {
+    width: 90%;
   }
 }
 
@@ -25,14 +39,26 @@
   .promotion-image {
     &:first-child {
       justify-self: right;
+
+      @include mobile {
+        justify-self: auto;
+      }
     }
 
     &:last-child {
       justify-self: left;
+
+      @include mobile {
+        justify-self: auto;
+      }
     }
 
     img {
       border-radius: 10px;
+
+      @include mobile {
+        width: 360px;
+      }
     }
   }
 
@@ -41,22 +67,44 @@
 
     &:first-child {
       justify-self: right;
+
+      @include mobile {
+        justify-self: auto;
+      }
     }
 
     &:last-child {
       justify-self: left;
+
+      @include mobile {
+        justify-self: auto;
+      }
     }
 
     h2 {
       font-size: 2.5em;
+
+      @include mobile {
+        font-size: 1.7em;
+      }
     }
 
     p {
       font-size: 1.5em;
+
+      @include mobile {
+        font-size: 1.3em;
+      }
     }
 
     .red {
       color: rgba(255,0,0,0.7);
     }
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    margin: 0 auto 2em auto;
   }
 }
