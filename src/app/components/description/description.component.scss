@@ -149,6 +149,16 @@
     .red {
       color: rgba(255,0,0,0.7);
     }
+
+    .mat-raised-button.mat-primary {
+      background-color: #000;
+      font-size: 0.7em;
+      padding: 0.5em 1em;
+
+      &:hover {
+        background-color: red;
+      }
+    }
   }
 
   @include mobile {
